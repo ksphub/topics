@@ -1,1 +1,14 @@
 https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
+
+  647  yum install jenkins
+  648  sudo yum install jenkins
+  649  sudo yum update –y
+  650  sudo yum update
+  651  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  652  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  653  sudo yum upgrade
+  654  sudo amazon-linux-extras install java-openjdk11 -y
+  655  sudo yum install jenkins -y
+  656  sudo systemctl enable jenkins
+  657  sudo systemctl start jenkins
+  659  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
